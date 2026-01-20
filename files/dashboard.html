@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admin Dashboard — Jamia Imamuddin Madrasa</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-grid">
+      <div>
+        <a class="brand" href="/">Jamia Imamuddin Madrasa</a>
+        <div class="sub">Admin Dashboard</div>
+      </div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="/">Public Site</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main class="container section">
+    <h1>Gallery — Dashboard</h1>
+    <p>Use this page to add or remove images for the site's gallery. Note: this demo saves images in your browser (localStorage). To make uploads permanent for everyone, host the images on the server or a repository (I can help).</p>
+
+    <div class="dashboard-controls">
+      <label class="file-label">
+        Select images to add (multiple allowed)
+        <input id="fileInput" type="file" accept="image/*" multiple />
+      </label>
+      <button id="saveBtn" class="btn">Save Selected to Gallery</button>
+      <button id="clearBtn" class="btn ghost">Clear Gallery (local)</button>
+    </div>
+
+    <h3>Preview</h3>
+    <div id="previewGrid" class="gallery-grid preview"></div>
+
+    <h3>Current Gallery (local)</h3>
+    <div id="currentGrid" class="gallery-grid"></div>
+
+    <p class="muted">To publish images for all visitors: add image files to the site images/ folder (image1.jpg, image2.jpg, image3.jpg) or ask me to push them to a hosted repo.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Jamia Imamuddin Madrasa — Dashboard</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
